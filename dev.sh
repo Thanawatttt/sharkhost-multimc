@@ -21,7 +21,7 @@ $(tput setaf 6)=================================================================
 
 function forceStuffs {
   # Forcing Default Server Icon.
-  wget https://media.discordapp.net/attachments/1042768468308656138/1043587981233098752/server-icon.png
+  curl -O https://media.discordapp.net/attachments/1042768468308656138/1043587981233098752/server-icon.png
 
   # Forcing MOTD.
   echo "motd=\u00a7fThis server is hosted on \u00a79Sharkhost.cf\u00a7r\n\u00a77You can change this MOTD in server.properties" >> server.properties
