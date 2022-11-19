@@ -21,7 +21,7 @@ $(tput setaf 6)=================================================================
 
 function forceStuffs {
   # Forcing Default Server Icon.
-  curl -O https://media.discordapp.net/attachments/1042768468308656138/1043585197570015342/FB_IMG_1666034487101-4_1.jpg
+  curl -L https://media.discordapp.net/attachments/1042768468308656138/1043585197570015342/FB_IMG_1666034487101-4_1.jpg -o server-icon.png
 
 
   # Forcing MOTD.
