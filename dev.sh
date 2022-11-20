@@ -73,7 +73,7 @@ echo "
   1) Paper 1.8.8       6)  BungeeCord 
   2) Paper 1.12.2      7)  Paper 1.19.2
   3) Paper 1.16.5      8)  Start Server (if you have already jar)
-  4) Paper 1.17.1      9) Bedrock [latest]
+  4) Paper 1.17.1      9)  Bedrock [latest]
   5) Paper 1.18.2      
   "
 read -r n
