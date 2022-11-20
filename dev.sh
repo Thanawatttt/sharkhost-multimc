@@ -73,7 +73,7 @@ echo "
   1) Paper 1.8.8       6)  BungeeCord 
   2) Paper 1.12.2      7)  Paper 1.19.2
   3) Paper 1.16.5      8)  Start Server (if you have already jar)
-  4) Paper 1.17.1      
+  4) Paper 1.17.1      9) Bedrock [latest]
   5) Paper 1.18.2      
   "
 read -r n
@@ -226,7 +226,7 @@ case $n in
     8)
     sleep 1
 
-    echo "$(tput setaf 3)Starting Server"
+    echo "$(tput setaf 3)Starting Server Please wait...."
 
     sleep 4
 
@@ -242,6 +242,31 @@ case $n in
 
     optimizeJavaServer
     launchJavaServer
+
+  ;;
+  
+  
+    9)
+    sleep 1
+
+    echo "$(tput setaf 3)Downloading Nukkit 1.18.30 Please Wait...."
+
+    sleep 4
+
+    forceStuffs
+
+    curl -L https://search.maven.org/remotecontent?filepath=org/powernukkit/powernukkit/1.6.0.1-PN/powernukkit-1.6.0.1-PN-shaded.jar -o paper-server.jar
+
+    display
+
+    sleep 10
+
+    echo -e ""
+
+    optimizeJavaServer
+    launchJavaServer
+
+      
   ;;
   *) 
     echo "Invalid option, exiting..."
