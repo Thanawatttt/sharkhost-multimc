@@ -83,7 +83,7 @@ case $n in
   1) 
     sleep 1
 
-    echo "$(tput setaf 3)Ok, I will download 1.8.8 and start it for you."
+    echo "$(tput setaf 3)Downloading Paper 1.8.8 Please Wait...."
 
     sleep 4
 
@@ -106,7 +106,7 @@ case $n in
   2) 
     sleep 1
 
-    echo "$(tput setaf 3)Ok, I will download 1.12.2 and start it for you."
+    echo "$(tput setaf 3)Downloading Paper 1.12.2 Please Wait...."
 
     sleep 4
 
@@ -129,7 +129,7 @@ case $n in
   3) 
     sleep 1
 
-    echo "$(tput setaf 3)Ok, I will download 1.16.5 and start it for you."
+    echo "$(tput setaf 3)Downloading Paper 1.16.5 Please Wait...."
 
     sleep 4
 
@@ -152,7 +152,7 @@ case $n in
   4)
     sleep 1
 
-    echo "$(tput setaf 3)Ok, I will download 1.17.1 and start it for you."
+    echo "$(tput setaf 3)Downloading Paper 1.17.1 Please Wait...."
 
     sleep 4
 
@@ -173,7 +173,7 @@ case $n in
   5) 
     sleep 1
 
-    echo "$(tput setaf 3)Ok, I will download 1.18.2 and start it for you."
+    echo "$(tput setaf 3)Downloading Paper 1.18.2 Please Wait...."
 
     sleep 4
 
@@ -192,7 +192,7 @@ case $n in
   ;;
 
   6)
-    echo "$(tput setaf 3)Ok, I will download lasted Bungeecord and start it for you."
+    echo "$(tput setaf 3)Downloading Bungeecord Please Wait...."
 
     curl -O https://ci.md-5.net/job/BungeeCord/lastSuccessfulBuild/artifact/bootstrap/target/BungeeCord.jar
 
@@ -204,7 +204,7 @@ case $n in
   7)
     sleep 1
 
-    echo "$(tput setaf 3)Ok, I will download 1.19.2 and start it for you."
+    echo "$(tput setaf 3)Downloading Paper 1.19.2 Please Wait...."
 
     sleep 4
 
