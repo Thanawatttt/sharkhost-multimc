@@ -72,7 +72,7 @@ echo "
 
   1) Paper 1.8.8       6)  BungeeCord 
   2) Paper 1.12.2      7)  Paper 1.19.2
-  3) Paper 1.16.5      
+  3) Paper 1.16.5      8)  Start Server (if you have already jar)
   4) Paper 1.17.1      
   5) Paper 1.18.2      
   "
@@ -211,6 +211,28 @@ case $n in
     forceStuffs
 
     curl -L https://api.papermc.io/v2/projects/paper/versions/1.19.2/builds/273/downloads/paper-1.19.2-273.jar -o paper-server.jar
+
+    display
+
+    sleep 10
+
+    echo -e ""
+
+    optimizeJavaServer
+    launchJavaServer
+  ;;
+  
+  
+    8)
+    sleep 1
+
+    echo "$(tput setaf 3)Starting Server"
+
+    sleep 4
+
+    forceStuffs
+
+    java -Xms1024M -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:InitiatingHeapOccupancyPercent=15 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1 -Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true -jar paper-server.jar nogui
 
     display
 
