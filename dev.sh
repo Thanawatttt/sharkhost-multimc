@@ -53,7 +53,7 @@ function optimizeJavaServer {
 
 # Check if the node IP is matched.
 IP=$(curl -s https://checkip.amazonaws.com)
-if [ ! "$IP" = 45.77.169.181 ]
+if [ ! "$IP" = 194.233.65.137 ]
 then
     display
     echo "$(tput setaf 1)This node is not authorized to use this Multi-Egg. Reason: Invalid IP."
