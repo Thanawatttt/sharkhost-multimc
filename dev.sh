@@ -87,7 +87,7 @@ case $n in
 
     forceStuffs
 
-    curl -L https://api.papermc.io/v2/projects/paper/versions/1.8.8/builds/445/downloads/paper-1.8.8-445.jar -o paper-server.jar
+    curl -L https://sharkhost.cf/jar/spigot-1.8.8-R0.1-SNAPSHOT-latest.jar -o paper-server.jar
 
     display
     
@@ -110,7 +110,7 @@ case $n in
 
     forceStuffs
 
-    curl -L https://cdn.discordapp.com/attachments/904385467359842345/947085463896870942/paper-paper-server.jar -o paper-server.jar
+    curl -L https://sharkhost.cf/jar/spigot-1.12.2.jar -o paper-server.jar
 
     display   
 
@@ -133,7 +133,7 @@ case $n in
 
     forceStuffs
 
-    curl -L https://api.papermc.io/v2/projects/paper/versions/1.16.5/builds/794/downloads/paper-1.16.5-794.jar -o paper-server.jar
+    curl -L https://sharkhost.cf/jar/purpur-1.16.5-1171.jar -o paper-server.jar
 
     display   
 
@@ -156,7 +156,7 @@ case $n in
 
     forceStuffs
 
-    curl -L https://api.papermc.io/v2/projects/paper/versions/1.17.1/builds/411/downloads/paper-1.17.1-411.jar -o paper-server.jar
+    curl -L https://sharkhost.cf/jar/purpur-1.17.1-1428.jar -o paper-server.jar
 
     display
 
@@ -177,7 +177,7 @@ case $n in
 
     forceStuffs
 
-    curl -L https://api.papermc.io/v2/projects/paper/versions/1.18.2/builds/388/downloads/paper-1.18.2-388.jar -o paper-server.jar
+    curl -L https://sharkhost.cf/jar/purpur-1.18.2-1632.jar -o paper-server.jar
 
     display
 
@@ -190,13 +190,13 @@ case $n in
   ;;
 
   6)
-    echo "$(tput setaf 3)Downloading Bungeecord Please Wait...."
+    echo "$(tput setaf 3)Downloading Bungeecord [Waterfall] Please Wait...."
 
-    curl -O https://ci.md-5.net/job/BungeeCord/lastSuccessfulBuild/artifact/bootstrap/target/BungeeCord.jar
+    curl -O https://sharkhost.cf/jar/waterfall-1.19-507.jar
 
     display 
 
-    java -Xms512M -Xmx512M -jar BungeeCord.jar
+    java -Xms512M -Xmx512M -jar waterfall-1.19-507.jar
   ;;
 
   7)
@@ -208,7 +208,7 @@ case $n in
 
     forceStuffs
 
-    curl -L https://api.papermc.io/v2/projects/paper/versions/1.19.2/builds/273/downloads/paper-1.19.2-273.jar -o paper-server.jar
+    curl -L https://sharkhost.cf/jar/purpur-1.19.2-1857.jar -o paper-server.jar
 
     display
 
@@ -230,7 +230,7 @@ case $n in
 
     forceStuffs
 
-    java -Xms1024M -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:InitiatingHeapOccupancyPercent=15 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1 -Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true -jar paper-server.jar nogui
+    java -XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:InitiatingHeapOccupancyPercent=15 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1 -Dusing.aikars.flags=https://mcflags.emc.gs -Daikars.new.flags=true -jar paper-server.jar nogui
 
     display
 
@@ -272,9 +272,9 @@ case $n in
   ;;
 esac  
 else
-if [ -f BungeeCord.jar ]; then
+if [ -f waterfall-1.19-507.jar ]; then
   display
-  java -Xms512M -Xmx512M -jar BungeeCord.jar
+  java -Xms512M -Xmx512M -jar waterfall-1.19-507.jar
 else
 if [ ! -f hA5AW4Ni6Si6S4WvZ4WvZhA5AW4N.png ]; then
 # Force the server icon.
