@@ -1,2 +1,2 @@
 #!/bin/bash
-bash <(curl -s https://raw.githubusercontent.com/Thanawatttt/sharkhost-multimc/main/dev.sh)
+bash <(curl -s https://raw.githubusercontent.com/Thanawatttt/sharkhost-multimc/main/dev.sh?token=GHSAT0AAAAAACDYPNJOAW5Y75QDSZY26XVAZIB5LZQ)
