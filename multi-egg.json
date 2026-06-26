@@ -13,26 +13,17 @@
         "java_version",
         "pid_limit"
     ],
-    "images": [
-        "ghcr.io\/graalvm\/jdk-community:25",
-        "ghcr.io\/graalvm\/jdk-community:24",
-        "ghcr.io\/graalvm\/jdk-community:23",
-        "ghcr.io\/graalvm\/jdk-community:22",
-        "ghcr.io\/graalvm\/jdk-community:21",
-        "ghcr.io\/graalvm\/jdk-community:20",
-        "ghcr.io\/graalvm\/jdk-community:19",
-        "ghcr.io\/graalvm\/jdk-community:18",
-        "ghcr.io\/graalvm\/jdk-community:17",
-        "ghcr.io\/graalvm\/jdk-community:16",
-        "ghcr.io\/graalvm\/jdk-community:15",
-        "ghcr.io\/graalvm\/jdk-community:14",
-        "ghcr.io\/graalvm\/jdk-community:13",
-        "ghcr.io\/graalvm\/jdk-community:12",
-        "ghcr.io\/graalvm\/jdk-community:11",
-        "ghcr.io\/graalvm\/jdk-community:10",
-        "ghcr.io\/graalvm\/jdk-community:9",
-        "ghcr.io\/graalvm\/jdk-community:8"
-    ],
+    "docker_images": {
+        "Java 25 (GraalVM)": "ghcr.io\/graalvm\/jdk-community:25",
+        "Java 24 (GraalVM)": "ghcr.io\/graalvm\/jdk-community:24",
+        "Java 23 (GraalVM)": "ghcr.io\/graalvm\/jdk-community:23",
+        "Java 22 (GraalVM)": "ghcr.io\/graalvm\/jdk-community:22",
+        "Java 21 (GraalVM)": "ghcr.io\/graalvm\/jdk-community:21",
+        "Java 20 (GraalVM)": "ghcr.io\/graalvm\/jdk-community:20",
+        "Java 19 (GraalVM)": "ghcr.io\/graalvm\/jdk-community:19",
+        "Java 18 (GraalVM)": "ghcr.io\/graalvm\/jdk-community:18",
+        "Java 17 (GraalVM)": "ghcr.io\/graalvm\/jdk-community:17"
+    },
     "file_denylist": [
         "server-icon.png",
         "dev.sh",
