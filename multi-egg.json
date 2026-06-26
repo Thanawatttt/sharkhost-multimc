@@ -14,10 +14,24 @@
         "pid_limit"
     ],
     "images": [
-        "ghcr.io\/pterodactyl\/yolks:java_17",
-        "ghcr.io\/pterodactyl\/yolks:java_16",
-        "ghcr.io\/pterodactyl\/yolks:java_11",
-        "ghcr.io\/pterodactyl\/yolks:java_8"
+        "ghcr.io\/graalvm\/jdk-community:25",
+        "ghcr.io\/graalvm\/jdk-community:24",
+        "ghcr.io\/graalvm\/jdk-community:23",
+        "ghcr.io\/graalvm\/jdk-community:22",
+        "ghcr.io\/graalvm\/jdk-community:21",
+        "ghcr.io\/graalvm\/jdk-community:20",
+        "ghcr.io\/graalvm\/jdk-community:19",
+        "ghcr.io\/graalvm\/jdk-community:18",
+        "ghcr.io\/graalvm\/jdk-community:17",
+        "ghcr.io\/graalvm\/jdk-community:16",
+        "ghcr.io\/graalvm\/jdk-community:15",
+        "ghcr.io\/graalvm\/jdk-community:14",
+        "ghcr.io\/graalvm\/jdk-community:13",
+        "ghcr.io\/graalvm\/jdk-community:12",
+        "ghcr.io\/graalvm\/jdk-community:11",
+        "ghcr.io\/graalvm\/jdk-community:10",
+        "ghcr.io\/graalvm\/jdk-community:9",
+        "ghcr.io\/graalvm\/jdk-community:8"
     ],
     "file_denylist": [
         "server-icon.png",
